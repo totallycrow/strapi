@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "comic_posts",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Post",
+    "singularName": "comic-post",
+    "pluralName": "comic-posts",
+    "displayName": "ComicPost",
     "description": ""
   },
   "options": {
@@ -15,37 +15,34 @@
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "required": true
+      "type": "uid"
+    },
+    "Blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "comics.text-block",
+        "comics.image-block"
+      ]
     },
     "excerpt": {
-      "type": "string"
-    },
-    "content": {
-      "type": "blocks"
+      "type": "text"
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "posts"
-    },
-    "datePublished": {
-      "type": "datetime"
-    },
-    "dateModified": {
-      "type": "datetime"
+      "inversedBy": "comic_posts"
     },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "posts"
+      "inversedBy": "comic_posts"
     },
     "description": {
       "type": "text"
     },
-    "Seo": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "component": "generic.seo"
@@ -54,6 +51,12 @@
       "type": "component",
       "repeatable": false,
       "component": "generic.hero-image"
+    },
+    "datePublished": {
+      "type": "datetime"
+    },
+    "dateModified": {
+      "type": "datetime"
     }
   }
 }
