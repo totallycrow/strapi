@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_generic_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "ogImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
