@@ -21,9 +21,6 @@
     "excerpt": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -54,6 +51,15 @@
       "type": "component",
       "repeatable": false,
       "component": "generic.hero-image"
+    },
+    "contentArea": {
+      "type": "dynamiczone",
+      "components": [
+        "generic.video-embed",
+        "generic.image-block",
+        "generic.gif-embed",
+        "generic.content-block"
+      ]
     }
   }
 }

@@ -20,8 +20,12 @@
     "Blocks": {
       "type": "dynamiczone",
       "components": [
-        "comics.text-block",
-        "comics.image-block"
+        "generic.video-embed",
+        "generic.image-link",
+        "generic.image-block",
+        "generic.gif-embed",
+        "generic.content-block",
+        "generic.adsense-block"
       ]
     },
     "excerpt": {

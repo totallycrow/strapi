@@ -422,6 +422,8 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::comic-post.comic-post'
     >;
+    contentLong: Schema.Attribute.Blocks;
+    contentShort: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -459,7 +461,14 @@ export interface ApiComicPostComicPost extends Struct.CollectionTypeSchema {
   attributes: {
     author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
     Blocks: Schema.Attribute.DynamicZone<
-      ['comics.text-block', 'comics.image-block']
+      [
+        'generic.video-embed',
+        'generic.image-link',
+        'generic.image-block',
+        'generic.gif-embed',
+        'generic.content-block',
+        'generic.adsense-block',
+      ]
     >;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     createdAt: Schema.Attribute.DateTime;
@@ -500,7 +509,14 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
   attributes: {
     author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
-    content: Schema.Attribute.Blocks;
+    contentArea: Schema.Attribute.DynamicZone<
+      [
+        'generic.video-embed',
+        'generic.image-block',
+        'generic.gif-embed',
+        'generic.content-block',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

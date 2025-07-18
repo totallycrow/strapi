@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_comics_image_blocks",
+  "collectionName": "components_generic_image_links",
   "info": {
-    "displayName": "ImageBlock",
-    "icon": "picture"
+    "displayName": "ImageLink",
+    "icon": "exit"
   },
   "options": {},
   "attributes": {
@@ -16,8 +16,15 @@
       "type": "media",
       "multiple": false
     },
-    "altText": {
+    "url": {
       "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": true
     },
     "caption": {
       "type": "string"

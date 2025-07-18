@@ -54,6 +54,12 @@
       "relation": "oneToMany",
       "target": "api::comic-post.comic-post",
       "mappedBy": "category"
+    },
+    "contentLong": {
+      "type": "blocks"
+    },
+    "contentShort": {
+      "type": "blocks"
     }
   }
 }

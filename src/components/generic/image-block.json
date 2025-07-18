@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_generic_hero_images",
+  "collectionName": "components_generic_image_blocks",
   "info": {
-    "displayName": "HeroImage",
-    "icon": "picture",
+    "displayName": "ImageBlock",
+    "icon": "landscape",
     "description": ""
   },
   "options": {},
@@ -18,10 +18,10 @@
         "audios"
       ]
     },
-    "caption": {
+    "altText": {
       "type": "string"
     },
-    "alt": {
+    "caption": {
       "type": "string"
     }
   }
