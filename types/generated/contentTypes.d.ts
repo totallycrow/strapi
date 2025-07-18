@@ -506,7 +506,6 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     dateModified: Schema.Attribute.DateTime;
     datePublished: Schema.Attribute.DateTime;
-    description: Schema.Attribute.Text;
     excerpt: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'generic.hero-image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -514,6 +513,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Seo: Schema.Attribute.Component<'generic.seo', false>;
+    showcaseDescription: Schema.Attribute.Text;
     slug: Schema.Attribute.UID & Schema.Attribute.Required;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

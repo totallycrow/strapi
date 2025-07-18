@@ -42,7 +42,7 @@
       "target": "api::author.author",
       "inversedBy": "posts"
     },
-    "description": {
+    "showcaseDescription": {
       "type": "text"
     },
     "Seo": {
