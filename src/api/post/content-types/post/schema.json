@@ -58,7 +58,8 @@
         "generic.video-embed",
         "generic.image-block",
         "generic.gif-embed",
-        "generic.content-block"
+        "generic.content-block",
+        "generic.adsense-block"
       ]
     }
   }

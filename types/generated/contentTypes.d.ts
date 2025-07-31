@@ -515,6 +515,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
         'generic.image-block',
         'generic.gif-embed',
         'generic.content-block',
+        'generic.adsense-block',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
