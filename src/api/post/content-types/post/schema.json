@@ -10,6 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
@@ -44,13 +45,13 @@
     },
     "Seo": {
       "type": "component",
-      "repeatable": false,
-      "component": "generic.seo"
+      "component": "generic.seo",
+      "repeatable": false
     },
     "heroImage": {
       "type": "component",
-      "repeatable": false,
-      "component": "generic.hero-image"
+      "component": "generic.hero-image",
+      "repeatable": false
     },
     "contentArea": {
       "type": "dynamiczone",
@@ -61,6 +62,12 @@
         "generic.content-block",
         "generic.adsense-block"
       ]
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "post"
     }
   }
 }
