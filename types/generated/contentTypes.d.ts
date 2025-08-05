@@ -507,7 +507,7 @@ export interface ApiCommentComment extends Struct.CollectionTypeSchema {
     singularName: 'comment';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     approved: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
