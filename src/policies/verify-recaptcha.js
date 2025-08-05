@@ -4,7 +4,7 @@ const axios = require('axios');
 
 module.exports = async (policyContext, config, { strapi }) => {
   const { captchaToken } = policyContext.request.body.data;
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  const secretKey = process.env.RECAPTCHA_COMMENTS_SECRET_KEY;
 
   if (!captchaToken) {
     return policyContext.badRequest('Please provide a reCAPTCHA token.');
