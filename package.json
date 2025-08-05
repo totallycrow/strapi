@@ -19,6 +19,7 @@
     "@strapi/provider-upload-aws-s3": "^5.18.1",
     "@strapi/provider-upload-local": "5.20.0",
     "@strapi/strapi": "5.20.0",
+    "axios": "^1.11.0",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
