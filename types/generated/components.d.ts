@@ -27,6 +27,16 @@ export interface GenericContentBlock extends Struct.ComponentSchema {
   };
 }
 
+export interface GenericCustomAdBreak extends Struct.ComponentSchema {
+  collectionName: 'components_generic_custom_ad_breaks';
+  info: {
+    displayName: 'customAdBreak';
+  };
+  attributes: {
+    type: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface GenericGifEmbed extends Struct.ComponentSchema {
   collectionName: 'components_generic_gif_embeds';
   info: {
@@ -112,6 +122,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'generic.adsense-block': GenericAdsenseBlock;
       'generic.content-block': GenericContentBlock;
+      'generic.custom-ad-break': GenericCustomAdBreak;
       'generic.gif-embed': GenericGifEmbed;
       'generic.hero-image': GenericHeroImage;
       'generic.image-block': GenericImageBlock;

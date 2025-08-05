@@ -60,7 +60,8 @@
         "generic.image-block",
         "generic.gif-embed",
         "generic.content-block",
-        "generic.adsense-block"
+        "generic.adsense-block",
+        "generic.custom-ad-break"
       ]
     },
     "comments": {
